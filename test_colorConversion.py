@@ -8,7 +8,8 @@ from convert_color import (get_color_from_pair_number,
     "pair_number,expected_major_color,expected_minor_color",
     [(4, 'White', 'Brown'), (5, 'White', 'Slate')],
 )
-def test_number_to_pair(pair_number, expected_major_color, expected_minor_color):
+def test_number_to_pair(pair_number, expected_major_color,
+                        expected_minor_color):
     """Test conversion from pair number to color pair."""
     major_color, minor_color = get_color_from_pair_number(pair_number)
     assert major_color == expected_major_color
