@@ -12,8 +12,8 @@ def main():
     print("\n1. Basic Color Conversion Examples:\n" + "-" * 35)
     major, minor = get_color_from_pair_number(12)
     print(f"Pair 12 -> {major} {minor}")
-    print(f"Violet Slate -> Pair {get_pair_number_from_color('Violet',
-                                                             'Slate')}")
+    pair_number = get_pair_number_from_color('Violet', 'Slate')
+    print(f"Violet Slate -> Pair {pair_number}")
     print("\n2. Plain Text Reference Manual:\n" + "-" * 35)
     print_text_reference()
     print("\n3. Markdown Table Format:\n" + "-" * 28)
